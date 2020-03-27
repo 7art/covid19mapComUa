@@ -1,11 +1,11 @@
-const UkraineData = {
-  type: "FeatureCollection",
-  features: [
+{
+  "type": "FeatureCollection",
+  "features": [
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [32.07940673828125, 50.23724365234375],
             [32.08917236328125, 50.23785400390625],
@@ -1014,22 +1014,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 1,
-        name: "Черкаська область",
-        info: {
-          total: 2,
-          today: 0,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 1,
+        "name": "Черкаська область",
+        "info": {
+          "total": 1,
+          "today": 0,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [33.2943115234375, 52.357269287109375],
             [33.35894775390625, 52.3575439453125],
@@ -1871,22 +1871,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 2,
-        name: "Чернігівська область",
-        info: {
-          total: 0,
-          today: 0,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 2,
+        "name": "Чернігівська область",
+        "info": {
+          "total": 0,
+          "today": 0,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [25.742324829101562, 48.62969970703125],
             [25.753341674804688, 48.632568359375],
@@ -2242,22 +2242,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 3,
-        name: "Чернівецька область",
-        info: {
-          total: 47,
-          today: 5,
-          lethal: 1,
-          recovered: 4
+      "properties": {
+        "id": 3,
+        "name": "Чернівецька область",
+        "info": {
+          "total": 38,
+          "today": 13,
+          "lethal": 1,
+          "recovered": 1
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [34.9775505065918, 45.762852670319745],
             [35.04443359375, 45.6700439453125],
@@ -2697,22 +2697,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 4,
-        name: "Автономна Республіка Крим",
-        info: {
-          total: 0,
-          today: 0,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 4,
+        "name": "Автономна Республіка Крим",
+        "info": {
+          "total": 0,
+          "today": 0,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [34.983917236328125, 49.1636962890625],
             [35.018402099609375, 49.159698486328125],
@@ -3884,22 +3884,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 5,
-        name: "Дніпропетровська область",
-        info: {
-          total: 3,
-          today: 1,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 5,
+        "name": "Дніпропетровська область",
+        "info": {
+          "total": 2,
+          "today": 0,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [37.9765625, 49.13134765625],
             [37.981201171875, 49.132232666015625],
@@ -4776,22 +4776,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 6,
-        name: "Донецька область",
-        info: {
-          total: 2,
-          today: 1,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 6,
+        "name": "Донецька область",
+        "info": {
+          "total": 1,
+          "today": 0,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [24.654739379882812, 49.4967041015625],
             [24.663894653320312, 49.498291015625],
@@ -5375,22 +5375,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 7,
-        name: "Івано-Франківська область",
-        info: {
-          total: 24,
-          today: 8,
-          lethal: 2,
-          recovered: 0
+      "properties": {
+        "id": 7,
+        "name": "Івано-Франківська область",
+        "info": {
+          "total": 5,
+          "today": 0,
+          "lethal": 1,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [38.000396728515625, 49.8997802734375],
             [38.022918701171875, 49.90911865234375],
@@ -6206,22 +6206,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 8,
-        name: "Харківська область",
-        info: {
-          total: 0,
-          today: 0,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 8,
+        "name": "Харківська область",
+        "info": {
+          "total": 0,
+          "today": 0,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [32.639312744140625, 46.05999755859375],
             [32.783203125, 46.04632568359375],
@@ -7105,22 +7105,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 9,
-        name: "Херсонська область",
-        info: {
-          total: 1,
-          today: 0,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 9,
+        "name": "Херсонська область",
+        "info": {
+          "total": 0,
+          "today": 0,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [27.1922607421875, 50.54119873046875],
             [27.206375122070312, 50.53607177734375],
@@ -8016,22 +8016,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 10,
-        name: "Хмельницька область",
-        info: {
-          total: 0,
-          today: 0,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 10,
+        "name": "Хмельницька область",
+        "info": {
+          "total": 0,
+          "today": 0,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [29.828643798828125, 51.429962158203125],
             [29.84661865234375, 51.432891845703125],
@@ -9140,22 +9140,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 11,
-        name: "Київська область",
-        info: {
-          total: 79,
-          today: 21,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 11,
+        "name": "Київська область",
+        "info": {
+          "total": 22,
+          "today": 7,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [33.383148193359375, 48.93963623046875],
             [33.391265869140625, 48.94281005859375],
@@ -10290,22 +10290,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 12,
-        name: "Кіровоградська область",
-        info: {
-          total: 0,
-          today: 0,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 12,
+        "name": "Кіровоградська область",
+        "info": {
+          "total": 0,
+          "today": 0,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [38.253814697265625, 50.059051513671875],
             [38.28118896484375, 50.062408447265625],
@@ -10907,22 +10907,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 13,
-        name: "Луганська область",
-        info: {
-          total: 1,
-          today: 0,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 13,
+        "name": "Луганська область",
+        "info": {
+          "total": 1,
+          "today": 1,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [24.2589111328125, 50.5755615234375],
             [24.2589111328125, 50.5830078125],
@@ -11500,22 +11500,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 14,
-        name: "Львівська область",
-        info: {
-          total: 3,
-          today: 1,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 14,
+        "name": "Львівська область",
+        "info": {
+          "total": 2,
+          "today": 0,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [31.566650390625, 46.55035400390625],
             [31.58154296875, 46.54522705078125],
@@ -12655,22 +12655,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 15,
-        name: "Миколаївська область",
-        info: {
-          total: 0,
-          today: 0,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 15,
+        "name": "Миколаївська область",
+        "info": {
+          "total": 0,
+          "today": 0,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [29.807464599609375, 45.61431884765625],
             [29.73095703125, 45.59136962890625],
@@ -13655,22 +13655,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 16,
-        name: "Одеська область",
-        info: {
-          total: 4,
-          today: 0,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 16,
+        "name": "Одеська область",
+        "info": {
+          "total": 1,
+          "today": 1,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [33.730621337890625, 50.461669921875],
             [33.738067626953125, 50.462371826171875],
@@ -14457,22 +14457,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 17,
-        name: "Полтавська область",
-        info: {
-          total: 0,
-          today: 0,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 17,
+        "name": "Полтавська область",
+        "info": {
+          "total": 0,
+          "today": 0,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [25.981124877929688, 51.903472900390625],
             [26.050582885742188, 51.904815673828125],
@@ -15281,22 +15281,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 18,
-        name: "Рівненська область",
-        info: {
-          total: 9,
-          today: 9,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 18,
+        "name": "Рівненська область",
+        "info": {
+          "total": 0,
+          "today": 0,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [34.246002197265625, 51.875457763671875],
             [34.264892578125, 51.881195068359375],
@@ -16070,22 +16070,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 19,
-        name: "Сумська область",
-        info: {
-          total: 0,
-          today: 0,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 19,
+        "name": "Сумська область",
+        "info": {
+          "total": 0,
+          "today": 0,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [26.160552978515625, 50.241455078125],
             [26.165817260742188, 50.242095947265625],
@@ -16820,22 +16820,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 20,
-        name: "Тернопільська область",
-        info: {
-          total: 25,
-          today: 17,
-          lethal: 1,
-          recovered: 0
+      "properties": {
+        "id": 20,
+        "name": "Тернопільська область",
+        "info": {
+          "total": 4,
+          "today": 2,
+          "lethal": 1,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [29.02301025390625, 49.58734130859375],
             [29.060836791992188, 49.58929443359375],
@@ -17643,22 +17643,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 21,
-        name: "Вінницька область",
-        info: {
-          total: 5,
-          today: 4,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 21,
+        "name": "Вінницька область",
+        "info": {
+          "total": 0,
+          "today": 0,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [25.547393798828125, 51.91943359375],
             [25.5516357421875, 51.901824951171875],
@@ -18271,22 +18271,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 22,
-        name: "Волинська область",
-        info: {
-          total: 2,
-          today: 0,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 22,
+        "name": "Волинська область",
+        "info": {
+          "total": 1,
+          "today": 1,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [22.664382934570312, 49.04144287109375],
             [22.685775756835938, 49.04278564453125],
@@ -18688,22 +18688,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 23,
-        name: "Закарпатська область",
-        info: {
-          total: 1,
-          today: 1,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 23,
+        "name": "Закарпатська область",
+        "info": {
+          "total": 0,
+          "today": 0,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [35.514739990234375, 48.079376220703125],
             [35.521881103515625, 48.079376220703125],
@@ -19558,22 +19558,22 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 24,
-        name: "Запорізька область",
-        info: {
-          total: 8,
-          today: 1,
-          lethal: 0,
-          recovered: 0
+      "properties": {
+        "id": 24,
+        "name": "Запорізька область",
+        "info": {
+          "total": 2,
+          "today": 2,
+          "lethal": 0,
+          "recovered": 0
         }
       }
     },
     {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [28.346878051757812, 51.525146484375],
             [28.359634399414062, 51.52935791015625],
@@ -20413,18 +20413,16 @@ const UkraineData = {
           ]
         ]
       },
-      properties: {
-        id: 25,
-        name: "Житомирська область",
-        info: {
-          total: 2,
-          today: 0,
-          lethal: 1,
-          recovered: 0
+      "properties": {
+        "id": 25,
+        "name": "Житомирська область",
+        "info": {
+          "total": 2,
+          "today": 0,
+          "lethal": 1,
+          "recovered": 0
         }
       }
     }
   ]
-};
-
-export default UkraineData;
+}

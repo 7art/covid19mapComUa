@@ -10,6 +10,10 @@ export default function App() {
     recovered: 0
   });
 
+  // const showTotal = total => {
+  //   return total;
+  // };
+  // console.log(totalSick);
   return (
     <Fragment>
       {totalSick.total !== 0 && <LeftPanel total={totalSick} />}

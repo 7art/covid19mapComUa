@@ -53,9 +53,12 @@ export default function Areas({ feature, index }) {
       opacity: 1,
       color: cartographyColor[0],
       //dashArray: "3",
-      fillOpacity: 0.2
+      fillOpacity: 0.5
     };
   }
+  //   <Popup autoPan={true}>
+  //   <p>{feature.properties.name}</p>
+  // </Popup>
 
   return (
     <>
@@ -70,9 +73,6 @@ export default function Areas({ feature, index }) {
           setColorArea(cartographyColor[1]);
         }}
       >
-        <Popup autoPan={true}>
-          <p>{feature.properties.name}</p>
-        </Popup>
         <GeoJSON
           key={index}
           data={feature}
@@ -96,7 +96,7 @@ export default function Areas({ feature, index }) {
                 <li className="grey-text">
                   Летальні віпадки: {feature.properties.info.lethal}
                 </li>
-                <li className="green-text">
+                <li className="green-text border-bottom border-light">
                   Одужало: {feature.properties.info.recovered}
                 </li>
               </MDBTypography>
