@@ -11,7 +11,7 @@ import {
 let today = new Date().toLocaleDateString();
 
 function LeftPanel(props) {
-  console.log(props);
+  // console.log(props);
   const { total, lethal, newToday, recovered } = props.total;
   return (
     <MDBCard className="left-panel" style={{ position: "absolute" }}>

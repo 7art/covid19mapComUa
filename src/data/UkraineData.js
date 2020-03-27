@@ -1017,6 +1017,7 @@ const UkraineData = {
       properties: {
         id: 1,
         name: "Черкаська область",
+        coordinates: [49.38, 31.7],
         info: {
           total: 2,
           today: 0,
@@ -1874,6 +1875,7 @@ const UkraineData = {
       properties: {
         id: 2,
         name: "Чернігівська область",
+        coordinates: [51.34, 31.94],
         info: {
           total: 0,
           today: 0,
@@ -2245,6 +2247,7 @@ const UkraineData = {
       properties: {
         id: 3,
         name: "Чернівецька область",
+        coordinates: [48.22, 25.81],
         info: {
           total: 47,
           today: 5,
@@ -2700,6 +2703,7 @@ const UkraineData = {
       properties: {
         id: 4,
         name: "Автономна Республіка Крим",
+        coordinates: [45.31, 34.21],
         info: {
           total: 0,
           today: 0,
@@ -3887,6 +3891,7 @@ const UkraineData = {
       properties: {
         id: 5,
         name: "Дніпропетровська область",
+        coordinates: [48.57, 34.93],
         info: {
           total: 3,
           today: 1,
@@ -4779,6 +4784,7 @@ const UkraineData = {
       properties: {
         id: 6,
         name: "Донецька область",
+        coordinates: [48.11, 37.7],
         info: {
           total: 2,
           today: 1,
@@ -5378,6 +5384,7 @@ const UkraineData = {
       properties: {
         id: 7,
         name: "Івано-Франківська область",
+        coordinates: [48.72, 24.65],
         info: {
           total: 24,
           today: 8,
@@ -6209,6 +6216,7 @@ const UkraineData = {
       properties: {
         id: 8,
         name: "Харківська область",
+        coordinates: [49.62, 36.51],
         info: {
           total: 0,
           today: 0,
@@ -7108,6 +7116,7 @@ const UkraineData = {
       properties: {
         id: 9,
         name: "Херсонська область",
+        coordinates: [46.71, 32.7],
         info: {
           total: 1,
           today: 0,
@@ -8019,6 +8028,7 @@ const UkraineData = {
       properties: {
         id: 10,
         name: "Хмельницька область",
+        coordinates: [49.55, 26.93],
         info: {
           total: 0,
           today: 0,
@@ -9143,6 +9153,7 @@ const UkraineData = {
       properties: {
         id: 11,
         name: "Київська область",
+        coordinates: [50.27, 30.54],
         info: {
           total: 79,
           today: 21,
@@ -10293,6 +10304,7 @@ const UkraineData = {
       properties: {
         id: 12,
         name: "Кіровоградська область",
+        coordinates: [48.46, 32.29],
         info: {
           total: 0,
           today: 0,
@@ -10910,6 +10922,7 @@ const UkraineData = {
       properties: {
         id: 13,
         name: "Луганська область",
+        coordinates: [49.11, 39.04],
         info: {
           total: 1,
           today: 0,
@@ -11503,6 +11516,7 @@ const UkraineData = {
       properties: {
         id: 14,
         name: "Львівська область",
+        coordinates: [49.81, 23.86],
         info: {
           total: 3,
           today: 1,
@@ -12658,6 +12672,7 @@ const UkraineData = {
       properties: {
         id: 15,
         name: "Миколаївська область",
+        coordinates: [47.4, 31.88],
         info: {
           total: 0,
           today: 0,
@@ -13658,6 +13673,7 @@ const UkraineData = {
       properties: {
         id: 16,
         name: "Одеська область",
+        coordinates: [47.01, 30.34],
         info: {
           total: 4,
           today: 0,
@@ -14460,6 +14476,7 @@ const UkraineData = {
       properties: {
         id: 17,
         name: "Полтавська область",
+        coordinates: [49.72, 34.05],
         info: {
           total: 0,
           today: 0,
@@ -15284,6 +15301,7 @@ const UkraineData = {
       properties: {
         id: 18,
         name: "Рівненська область",
+        coordinates: [51.19, 26.58],
         info: {
           total: 9,
           today: 9,
@@ -16073,6 +16091,7 @@ const UkraineData = {
       properties: {
         id: 19,
         name: "Сумська область",
+        coordinates: [50.95, 34.14],
         info: {
           total: 0,
           today: 0,
@@ -16823,6 +16842,7 @@ const UkraineData = {
       properties: {
         id: 20,
         name: "Тернопільська область",
+        coordinates: [49.41, 25.55],
         info: {
           total: 25,
           today: 17,
@@ -17646,6 +17666,7 @@ const UkraineData = {
       properties: {
         id: 21,
         name: "Вінницька область",
+        coordinates: [48.98, 28.69],
         info: {
           total: 5,
           today: 4,
@@ -18274,6 +18295,7 @@ const UkraineData = {
       properties: {
         id: 22,
         name: "Волинська область",
+        coordinates: [51.18, 24.91],
         info: {
           total: 2,
           today: 0,
@@ -18691,6 +18713,7 @@ const UkraineData = {
       properties: {
         id: 23,
         name: "Закарпатська область",
+        coordinates: [48.44, 23.18],
         info: {
           total: 1,
           today: 1,
@@ -19561,6 +19584,7 @@ const UkraineData = {
       properties: {
         id: 24,
         name: "Запорізька область",
+        coordinates: [47.23, 35.72],
         info: {
           total: 8,
           today: 1,
@@ -20416,6 +20440,7 @@ const UkraineData = {
       properties: {
         id: 25,
         name: "Житомирська область",
+        coordinates: [50.75, 28.41],
         info: {
           total: 2,
           today: 0,
