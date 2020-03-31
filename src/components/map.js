@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback } from "react";
+import React from "react";
 import { Map as LeafletMap, TileLayer, withLeaflet } from "react-leaflet";
 // import worldGeoJSON from "geojson-world-map";
 import Feature from "./Feature";
@@ -6,21 +6,12 @@ import LeftPanel from "./LeftPanel";
 // import ukrAdmData from "../data/ukrAdmData.js";
 import UkraineData from "../data/UkraineData.js";
 
-// const outer = [
-//   [50.505, -29.09],
-//   [52.505, 29.09]
-// ];
-
-export default function Map({ setTotal }) {
-  // const [modal, setModal] = useState(false);
-  // const [totalSick, setTotalSick] = useState(0);
-  // const toggle = () => setModal(!modal);
+export default function Map() {
   // const centerKyiv = [50.27, 30.3];
 
   const LeftPanelBar = withLeaflet(LeftPanel);
   const centerUa = [48.77, 31.87];
 
-  const callbackSetTotal = useCallback(setTotal, []);
   const totalInfo = {
     total: 0,
     lethal: 0,
@@ -35,13 +26,6 @@ export default function Map({ setTotal }) {
     totalInfo.recovered += feature.recovered;
   };
 
-  useEffect(() => {
-    callbackSetTotal(totalInfo);
-  }, [callbackSetTotal]);
-  // useEffect(() => {
-  //   setTotal(totalInfo);
-  // }, [totalInfo.total]);
-  // console.log(totalSick);
   return (
     <LeafletMap
       center={centerUa}
@@ -61,13 +45,12 @@ export default function Map({ setTotal }) {
         zIndex={1}
       />
       {UkraineData.features.map((feature, index, array) => {
-        {
-          feature.properties.id !== 4 && setInfo(feature.properties.info);
-        }
+        feature.properties.id !== 4 && setInfo(feature.properties.info);
         return (
           <Feature key={"feature_" + index} feature={feature} index={index} />
         );
       })}
+      <LeftPanelBar total={totalInfo} />
     </LeafletMap>
   );
 }
