@@ -3,7 +3,7 @@ import { MDBCard, MDBListGroup, MDBListGroupItem, MDBIcon } from "mdbreact";
 
 let today = new Date().toLocaleDateString();
 
-function LeftPanel(props) {
+function LeftSidebar(props) {
   const { total, lethal, newToday, recovered } = props.total;
   //className="left-panel"
   return (
@@ -26,4 +26,4 @@ function LeftPanel(props) {
     </MDBCard>
   );
 }
-export default LeftPanel;
+export default LeftSidebar;

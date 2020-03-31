@@ -2,14 +2,14 @@ import React from "react";
 import { Map as LeafletMap, TileLayer, withLeaflet } from "react-leaflet";
 // import worldGeoJSON from "geojson-world-map";
 import Feature from "./Feature";
-import LeftPanel from "./LeftPanel";
+import LeftSidebar from "./LeftSidebar";
 // import ukrAdmData from "../data/ukrAdmData.js";
 import UkraineData from "../data/UkraineData.js";
 
 export default function Map() {
   // const centerKyiv = [50.27, 30.3];
 
-  const LeftPanelBar = withLeaflet(LeftPanel);
+  const LeftPanel = withLeaflet(LeftSidebar);
   const centerUa = [48.77, 31.87];
 
   const totalInfo = {
@@ -50,7 +50,7 @@ export default function Map() {
           <Feature key={"feature_" + index} feature={feature} index={index} />
         );
       })}
-      <LeftPanelBar total={totalInfo} />
+      <LeftPanel total={totalInfo} />
     </LeafletMap>
   );
 }
