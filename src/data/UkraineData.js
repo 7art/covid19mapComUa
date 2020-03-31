@@ -1019,7 +1019,7 @@ const UkraineData = {
         name: "Черкаська область",
         coordinates: [49.38, 31.7],
         info: {
-          total: 2,
+          total: 50,
           today: 0,
           lethal: 0,
           recovered: 0
@@ -1877,7 +1877,7 @@ const UkraineData = {
         name: "Чернігівська область",
         coordinates: [51.34, 31.94],
         info: {
-          total: 0,
+          total: 2,
           today: 0,
           lethal: 0,
           recovered: 0
@@ -2249,10 +2249,10 @@ const UkraineData = {
         name: "Чернівецька область",
         coordinates: [48.22, 25.81],
         info: {
-          total: 47,
-          today: 5,
-          lethal: 1,
-          recovered: 4
+          total: 90,
+          today: 15,
+          lethal: 2,
+          recovered: 7
         }
       }
     },
@@ -2705,7 +2705,7 @@ const UkraineData = {
         name: "Автономна Республіка Крим",
         coordinates: [45.31, 34.21],
         info: {
-          total: 0,
+          total: 20,
           today: 0,
           lethal: 0,
           recovered: 0
@@ -3893,7 +3893,7 @@ const UkraineData = {
         name: "Дніпропетровська область",
         coordinates: [48.57, 34.93],
         info: {
-          total: 3,
+          total: 9,
           today: 1,
           lethal: 0,
           recovered: 0
@@ -4786,8 +4786,8 @@ const UkraineData = {
         name: "Донецька область",
         coordinates: [48.11, 37.7],
         info: {
-          total: 2,
-          today: 1,
+          total: 6,
+          today: 0,
           lethal: 0,
           recovered: 0
         }
@@ -5386,9 +5386,9 @@ const UkraineData = {
         name: "Івано-Франківська область",
         coordinates: [48.72, 24.65],
         info: {
-          total: 24,
-          today: 8,
-          lethal: 2,
+          total: 45,
+          today: 4,
+          lethal: 3,
           recovered: 0
         }
       }
@@ -6218,7 +6218,7 @@ const UkraineData = {
         name: "Харківська область",
         coordinates: [49.62, 36.51],
         info: {
-          total: 0,
+          total: 1,
           today: 0,
           lethal: 0,
           recovered: 0
@@ -8030,8 +8030,8 @@ const UkraineData = {
         name: "Хмельницька область",
         coordinates: [49.55, 26.93],
         info: {
-          total: 0,
-          today: 0,
+          total: 3,
+          today: 1,
           lethal: 0,
           recovered: 0
         }
@@ -9155,10 +9155,10 @@ const UkraineData = {
         name: "Київська область",
         coordinates: [50.27, 30.54],
         info: {
-          total: 79,
-          today: 21,
-          lethal: 0,
-          recovered: 0
+          total: 159,
+          today: 8,
+          lethal: 2,
+          recovered: 1
         }
       }
     },
@@ -10306,7 +10306,7 @@ const UkraineData = {
         name: "Кіровоградська область",
         coordinates: [48.46, 32.29],
         info: {
-          total: 0,
+          total: 4,
           today: 0,
           lethal: 0,
           recovered: 0
@@ -10924,7 +10924,7 @@ const UkraineData = {
         name: "Луганська область",
         coordinates: [49.11, 39.04],
         info: {
-          total: 1,
+          total: 2,
           today: 0,
           lethal: 0,
           recovered: 0
@@ -11518,8 +11518,8 @@ const UkraineData = {
         name: "Львівська область",
         coordinates: [49.81, 23.86],
         info: {
-          total: 3,
-          today: 1,
+          total: 6,
+          today: 0,
           lethal: 0,
           recovered: 0
         }
@@ -13675,8 +13675,8 @@ const UkraineData = {
         name: "Одеська область",
         coordinates: [47.01, 30.34],
         info: {
-          total: 4,
-          today: 0,
+          total: 11,
+          today: 3,
           lethal: 0,
           recovered: 0
         }
@@ -14478,7 +14478,7 @@ const UkraineData = {
         name: "Полтавська область",
         coordinates: [49.72, 34.05],
         info: {
-          total: 0,
+          total: 1,
           today: 0,
           lethal: 0,
           recovered: 0
@@ -15303,9 +15303,9 @@ const UkraineData = {
         name: "Рівненська область",
         coordinates: [51.19, 26.58],
         info: {
-          total: 9,
-          today: 9,
-          lethal: 0,
+          total: 13,
+          today: 2,
+          lethal: 3,
           recovered: 0
         }
       }
@@ -16093,9 +16093,9 @@ const UkraineData = {
         name: "Сумська область",
         coordinates: [50.95, 34.14],
         info: {
-          total: 0,
-          today: 0,
-          lethal: 0,
+          total: 10,
+          today: 1,
+          lethal: 1,
           recovered: 0
         }
       }
@@ -16844,8 +16844,8 @@ const UkraineData = {
         name: "Тернопільська область",
         coordinates: [49.41, 25.55],
         info: {
-          total: 25,
-          today: 17,
+          total: 78,
+          today: 18,
           lethal: 1,
           recovered: 0
         }
@@ -17668,8 +17668,8 @@ const UkraineData = {
         name: "Вінницька область",
         coordinates: [48.98, 28.69],
         info: {
-          total: 5,
-          today: 4,
+          total: 36,
+          today: 13,
           lethal: 0,
           recovered: 0
         }
@@ -18297,8 +18297,8 @@ const UkraineData = {
         name: "Волинська область",
         coordinates: [51.18, 24.91],
         info: {
-          total: 2,
-          today: 0,
+          total: 3,
+          today: 1,
           lethal: 0,
           recovered: 0
         }
@@ -18716,7 +18716,7 @@ const UkraineData = {
         coordinates: [48.44, 23.18],
         info: {
           total: 1,
-          today: 1,
+          today: 0,
           lethal: 0,
           recovered: 0
         }
@@ -19586,8 +19586,8 @@ const UkraineData = {
         name: "Запорізька область",
         coordinates: [47.23, 35.72],
         info: {
-          total: 8,
-          today: 1,
+          total: 13,
+          today: 2,
           lethal: 0,
           recovered: 0
         }
@@ -20442,7 +20442,7 @@ const UkraineData = {
         name: "Житомирська область",
         coordinates: [50.75, 28.41],
         info: {
-          total: 2,
+          total: 5,
           today: 0,
           lethal: 1,
           recovered: 0

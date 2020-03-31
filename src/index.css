@@ -1,3 +1,4 @@
+/* https://colorbrewer2.org/#type=sequential&scheme=Blues&n=7 */
 body {
   display: block;
   margin: 0;
@@ -24,4 +25,14 @@ body {
   padding: 5px;
   padding-bottom: 10px;
   border-radius: 5px;
+}
+.leaflet-tooltip,
+.popover-body {
+  padding: 0 !important;
+}
+.list-unstyled {
+  padding: 5px 11px 0px 11px !important;
+}
+.leaflet-tooltip {
+  border: 0 !important;
 }

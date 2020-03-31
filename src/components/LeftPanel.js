@@ -1,20 +1,16 @@
 import React from "react";
-import {
-  MDBCard,
-  MDBListGroup,
-  MDBListGroupItem,
-  MDBContainer,
-  MDBIcon,
-  MDBCardFooter
-} from "mdbreact";
+import { MDBCard, MDBListGroup, MDBListGroupItem, MDBIcon } from "mdbreact";
 
 let today = new Date().toLocaleDateString();
 
 function LeftPanel(props) {
-  // console.log(props);
   const { total, lethal, newToday, recovered } = props.total;
+  //className="left-panel"
   return (
-    <MDBCard className="left-panel" style={{ position: "absolute" }}>
+    <MDBCard
+      className="left-panel"
+      style={{ position: "absolute", opacity: 0.7 }}
+    >
       <MDBListGroup>
         <MDBListGroupItem className="font-weight-bold light-blue-text">
           Захворіло всього: {total}
@@ -30,5 +26,4 @@ function LeftPanel(props) {
     </MDBCard>
   );
 }
-
 export default LeftPanel;
