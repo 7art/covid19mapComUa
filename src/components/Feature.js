@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import { GeoJSON, FeatureGroup, Tooltip, CircleMarker } from "react-leaflet";
 import { MDBPopoverBody, MDBPopoverHeader, MDBTypography } from "mdbreact";
 
-export default function Feature({ feature, index }) {
+export default function Feature({ feature, featureList, index }) {
+  // console.log(feature.properties.coordinates);
+  // const featureList = { total: 0, lethal: 0, today: 0, recovered: 0 };
+
   const cartographyColor = ["#525252", "#bdd7e7", "#6baed6", "#2171b5"];
   const [colorArea, setColorArea] = useState(cartographyColor[1]);
   // const [currentPos, setCurrentPos] = useState(null);
@@ -39,7 +42,7 @@ export default function Feature({ feature, index }) {
       weight: 0.5,
       opacity: 1,
       color: cartographyColor[0],
-      fillOpacity: 0.5
+      fillOpacity: 0.5,
     };
   }
 
@@ -52,19 +55,19 @@ export default function Feature({ feature, index }) {
     >
       <MDBPopoverBody>
         <MDBPopoverBody>
-          <MDBPopoverHeader>{feature.properties.name}</MDBPopoverHeader>
+          <MDBPopoverHeader>{featureList[0].name}</MDBPopoverHeader>
           <MDBTypography listUnStyled>
             <li className="deep-orange-text">
-              Всього захворіло: {feature.properties.info.total}
+              Всього захворіло: {featureList[0].total}
             </li>
             <li className="indigo-text">
-              За останню добу: +{feature.properties.info.today}
+              За останню добу: +{featureList[0].today}
             </li>
             <li className="grey-text">
-              Летальні віпадки: {feature.properties.info.lethal}
+              Летальні віпадки: {featureList[0].lethal}
             </li>
             <li className="green-text border-bottom border-light">
-              Одужало: {feature.properties.info.recovered}
+              Одужало: {featureList[0].recovered}
             </li>
           </MDBTypography>
         </MDBPopoverBody>
@@ -101,13 +104,12 @@ export default function Feature({ feature, index }) {
           key={index}
           center={feature.properties.coordinates}
           fillColor={cartographyColor[3]}
-          radius={feature.properties.info.total / 3}
+          radius={featureList[0].total / 3}
           fillOpacity={0.5}
           stroke={false}
         >
           {tooltipView}
         </CircleMarker>
-
         {tooltipView}
       </GeoJSON>
     </FeatureGroup>
