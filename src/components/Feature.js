@@ -3,7 +3,7 @@ import { GeoJSON, FeatureGroup, Tooltip, CircleMarker } from "react-leaflet";
 import { MDBPopoverBody, MDBPopoverHeader, MDBTypography } from "mdbreact";
 
 export default function Feature({ feature, featureList, index }) {
-  // console.log(feature.properties.coordinates);
+  console.log(featureList);
   // const featureList = { total: 0, lethal: 0, today: 0, recovered: 0 };
 
   const cartographyColor = ["#525252", "#bdd7e7", "#6baed6", "#2171b5"];

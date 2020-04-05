@@ -58,7 +58,7 @@ export default function Map() {
         setFeatureList(list);
         setloading(false);
       });
-    return () => ref();
+    return () => ref;
   }, []);
 
   // console.log(totalInfo);
@@ -97,9 +97,3 @@ export default function Map() {
     </LeafletMap>
   );
 }
-
-const editAreas = (id) => {
-  const ref = firebase.firestore().collection("areas").doc(`${id}`).set({});
-
-  // console.log(name, id);
-};

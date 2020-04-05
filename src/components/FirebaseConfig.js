@@ -17,4 +17,6 @@ firebase.initializeApp(config);
 
 // firebase.firestore().settings(settings);
 
+// const getFeatures = () => {};
+
 export default firebase;

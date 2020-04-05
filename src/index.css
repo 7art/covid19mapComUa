@@ -36,3 +36,14 @@ body {
 .leaflet-tooltip {
   border: 0 !important;
 }
+.form-control {
+  display: inline !important;
+  max-width: 80px;
+}
+.table td,
+.table th {
+  vertical-align: middle !important;
+}
+.font-weight-bold {
+  display: inline !important;
+}
