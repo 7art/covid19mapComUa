@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { GeoJSON, FeatureGroup, Tooltip, CircleMarker } from "react-leaflet";
 import { MDBPopoverBody, MDBPopoverHeader, MDBTypography } from "mdbreact";
 
-export default function Feature({ feature, featureList, index }) {
-  console.log(featureList);
+export default function Feature({ feature, featureList }) {
+  console.log(feature, featureList);
   // const featureList = { total: 0, lethal: 0, today: 0, recovered: 0 };
 
   const cartographyColor = ["#525252", "#bdd7e7", "#6baed6", "#2171b5"];
@@ -78,7 +78,7 @@ export default function Feature({ feature, featureList, index }) {
   return (
     <FeatureGroup
       style={style}
-      key={index}
+      key={feature.properties.id}
       onmouseover={() => {
         setColorArea(cartographyColor[2]);
       }}
@@ -90,7 +90,7 @@ export default function Feature({ feature, featureList, index }) {
       // }}
     >
       <GeoJSON
-        key={index}
+        key={feature.properties.id}
         data={feature}
         style={style}
         // onEachFeature={onEachFeature}
@@ -98,13 +98,17 @@ export default function Feature({ feature, featureList, index }) {
         //   this.setState(e.latlng);
         //   // console.log(e.latlng);
         // }}
-        //10 * Math.log(feature.properties.info.total / 1)
+        //10 * Math.log(feature.properties.info.total / 1) featureList[0].total / 3
       >
         <CircleMarker
-          key={index}
+          key={feature.properties.id}
           center={feature.properties.coordinates}
           fillColor={cartographyColor[3]}
-          radius={featureList[0].total / 3}
+          radius={
+            featureList[0].total > 500
+              ? featureList[0].total / 18
+              : featureList[0].total / 10
+          }
           fillOpacity={0.5}
           stroke={false}
         >

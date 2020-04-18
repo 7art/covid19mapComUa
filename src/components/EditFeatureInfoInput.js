@@ -5,7 +5,7 @@ function EditFeatureInfoInput({ dataid, name, propsValue, onChange }) {
   useEffect(() => {
     setValue(propsValue);
   }, []);
-  console.log();
+  // console.log(dataid);
   return (
     <td>
       <input

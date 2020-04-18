@@ -7,6 +7,7 @@ import LeftSidebar from "./LeftSidebar";
 import UkraineData from "../data/UkraineData.js";
 
 import firebase from "./FirebaseConfig";
+import SpinnerPage from "./SpinnerPage";
 
 export default function Map() {
   // const centerKyiv = [50.27, 30.3];
@@ -32,11 +33,12 @@ export default function Map() {
       .then((snapshot) => {
         snapshot.forEach((doc) => {
           list.push({
-            id: doc.id,
+            // id: doc.id,
+            id: doc.data().id,
             ...doc.data(),
           });
 
-          doc.data().id !== 4 &&
+          doc.data().id !== 25 &&
             setTotalInfo({
               ...totalInfo,
               total: (totalInfo.total += doc.data().total),
@@ -80,7 +82,9 @@ export default function Map() {
         url="https://api.mapbox.com/styles/v1/seart/ck85rvqc60fs01ioa3j1fw1w0/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2VhcnQiLCJhIjoiY2s4NXBhcmV5MDkyZDNtb3Q0c2NpZ2F5dSJ9.R71WdPbLAuyCBFeBEznk5Q"
         zIndex={1}
       />
-      {!loading &&
+      {loading ? (
+        <SpinnerPage />
+      ) : (
         UkraineData.features.map((feature, index, array) => {
           return (
             <Feature
@@ -89,10 +93,10 @@ export default function Map() {
               featureList={featureList.filter(
                 (item) => item.id === feature.properties.id
               )}
-              index={index}
             />
           );
-        })}
+        })
+      )}
       {!loading && <LeftPanel total={totalInfo} />}
     </LeafletMap>
   );

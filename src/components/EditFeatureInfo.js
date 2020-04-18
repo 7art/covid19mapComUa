@@ -21,11 +21,12 @@ function EditFeatureInfo() {
     const areasRef = firebase
       .firestore()
       .collection("areas")
+      .orderBy("id")
       .get()
       .then((snapshot) => {
         snapshot.forEach((doc) => {
           list.push({
-            id: doc.id,
+            idArea: +doc.id,
             ...doc.data(),
           });
         });
@@ -46,7 +47,7 @@ function EditFeatureInfo() {
     // console.log(update);
     firebase.firestore().collection("areas").doc(`${id}`).update(update);
   };
-
+  console.log(featureList);
   return (
     <MDBContainer className="mt-5 text-center">
       <MDBRow>
@@ -72,7 +73,7 @@ function EditFeatureInfo() {
                   {featureList.map((item, idx, arr) => {
                     return (
                       <tr key={idx}>
-                        <td>{idx}</td>
+                        <td>{item.id}</td>
                         <td>
                           <p className="font-weight-bold">{item.name}</p>
                         </td>
@@ -80,7 +81,7 @@ function EditFeatureInfo() {
                           return (
                             <EditFeatureInfoInput
                               key={"input_" + item.id + inputName}
-                              dataid={item.id}
+                              dataid={item.idArea}
                               name={inputName}
                               propsValue={item[inputName]}
                               onChange={changeHandler}
