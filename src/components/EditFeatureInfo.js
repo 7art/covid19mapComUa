@@ -10,6 +10,9 @@ import {
   MDBTable,
   MDBTableHead,
   MDBTableBody,
+  MDBIcon,
+  MDBBox,
+  MDBTooltip,
 } from "mdbreact";
 
 function EditFeatureInfo() {
@@ -47,19 +50,41 @@ function EditFeatureInfo() {
     // console.log(update);
     firebase.firestore().collection("areas").doc(`${id}`).update(update);
   };
-  console.log(featureList);
+  // console.log(featureList);
   return (
     <MDBContainer className="mt-5 text-center">
       <MDBRow>
         <MDBCol>
           <MDBJumbotron>
-            <h2 className="h1 display-3"> EDIT COVID-19 INFO</h2>
+            <MDBContainer>
+              <MDBRow>
+                <MDBCol size="10">
+                  <h2 className="h1 display-3"> EDIT COVID-19 INFO</h2>
+                </MDBCol>
+                <MDBCol size="2">
+                  <MDBBox display="flex" justifyContent="end">
+                    <MDBTooltip material placement="right">
+                      <div>
+                        <MDBIcon
+                          onClick={() => firebase.auth().signOut()}
+                          icon="sign-out-alt"
+                          size="3x"
+                          className="cyan-text pr-3"
+                        />
+                      </div>
+                      <div>Logout</div>
+                    </MDBTooltip>
+                  </MDBBox>
+                </MDBCol>
+              </MDBRow>
+            </MDBContainer>
+
             <hr className="my-2" />
             {loading ? (
               <SpinnerPage />
             ) : (
               <MDBTable>
-                <MDBTableHead color="primary-color" textWhite>
+                <MDBTableHead color="info-color" textWhite>
                   <tr>
                     <th>#</th>
                     <th>The names of the regions</th>

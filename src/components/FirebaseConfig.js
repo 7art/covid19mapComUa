@@ -1,4 +1,5 @@
 import * as firebase from "firebase/app";
+import "firebase/auth";
 import firestore from "firebase/firestore";
 
 // const settings = { timestampsInSnapshots: true };

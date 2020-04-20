@@ -10,7 +10,7 @@ function EditFeatureInfoInput({ dataid, name, propsValue, onChange }) {
     <td>
       <input
         type="text"
-        className="form-control"
+        className="form-control edit"
         data-id={dataid}
         name={name}
         value={value}
