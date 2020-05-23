@@ -14,11 +14,12 @@ import {
   MDBBox,
   MDBTooltip,
 } from "mdbreact";
+import { TestFetch } from "./TestFetch";
 
 function EditFeatureInfo() {
   const [loading, setloading] = useState(true);
   const [featureList, setFeatureList] = useState([]);
-  const inputNames = ["total", "today", "lethal", "recovered"];
+  const inputNames = ["total", "lethal", "recovered"];
   useEffect(() => {
     const list = [];
     const areasRef = firebase
@@ -63,6 +64,7 @@ function EditFeatureInfo() {
                 </MDBCol>
                 <MDBCol size="2">
                   <MDBBox display="flex" justifyContent="end">
+                    <TestFetch />
                     <MDBTooltip material placement="right">
                       <div>
                         <MDBIcon
@@ -89,7 +91,7 @@ function EditFeatureInfo() {
                     <th>#</th>
                     <th>The names of the regions</th>
                     <th>Total</th>
-                    <th>Today</th>
+                    {/*<th>Today</th>*/}
                     <th>Lethal</th>
                     <th>Recovered</th>
                   </tr>

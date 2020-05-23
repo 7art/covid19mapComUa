@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import firebase from "./FirebaseConfig";
-
+import SpinnerPage from "./SpinnerPage";
 export const AuthContext = React.createContext();
 
 export const AuthProvider = ({ children }) => {
@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   if (pending) {
-    return <>Loading...</>;
+    return <SpinnerPage />;
   }
 
   return (

@@ -1,13 +1,5 @@
 import React, { useCallback, useContext } from "react";
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBInput,
-  MDBBtn,
-  MDBJumbotron,
-  MDBBox,
-} from "mdbreact";
+import { MDBInput, MDBBtn, MDBJumbotron, MDBBox } from "mdbreact";
 
 import { withRouter, Redirect } from "react-router";
 import firebase from "./FirebaseConfig";

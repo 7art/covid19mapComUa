@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Map as LeafletMap, TileLayer, withLeaflet } from "react-leaflet";
-// import worldGeoJSON from "geojson-world-map";
+
 import Feature from "./Feature";
 import LeftSidebar from "./LeftSidebar";
-// import ukrAdmData from "../data/ukrAdmData.js";
+
 import UkraineData from "../data/UkraineData.js";
 
 import firebase from "./FirebaseConfig";
 import SpinnerPage from "./SpinnerPage";
 
 export default function Map() {
-  // const centerKyiv = [50.27, 30.3];
-  // const f = useFeatures();
   const LeftPanel = withLeaflet(LeftSidebar);
   const centerUa = [48.77, 31.87];
 
@@ -32,11 +30,23 @@ export default function Map() {
       .get()
       .then((snapshot) => {
         snapshot.forEach((doc) => {
-          list.push({
-            // id: doc.id,
-            id: doc.data().id,
-            ...doc.data(),
-          });
+          if (doc.data().id === 26) {
+            list.map((item) => {
+              if (item.id === 9) {
+                item.name = "Київ та область";
+                item.lethal += doc.data().lethal;
+                item.recovered += doc.data().recovered;
+                item.today += doc.data().today;
+                item.total += doc.data().total;
+              }
+              return null;
+            });
+          } else {
+            list.push({
+              id: doc.data().id,
+              ...doc.data(),
+            });
+          }
 
           doc.data().id !== 25 &&
             setTotalInfo({
@@ -46,14 +56,6 @@ export default function Map() {
               today: (totalInfo.today += doc.data().today),
               recovered: (totalInfo.recovered += doc.data().recovered),
             });
-          // setTotalInfo((t) => {
-          //   return {
-          //     total: (t.total += doc.data().total),
-          //     lethal: (t.lethal += doc.data().lethal),
-          //     today: (t.today += doc.data().today),
-          //     recovered: (t.recovered += doc.data().recovered),
-          //   };
-          // });
         });
       })
       .then(() => {
@@ -63,7 +65,6 @@ export default function Map() {
     return () => ref;
   }, []);
 
-  // console.log(totalInfo);
   return (
     <LeafletMap
       center={centerUa}

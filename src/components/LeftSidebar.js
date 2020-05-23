@@ -4,7 +4,7 @@ import { MDBCard, MDBListGroup, MDBListGroupItem, MDBIcon } from "mdbreact";
 let dateToday = new Date().toLocaleDateString();
 
 function LeftSidebar(props) {
-  const { total, lethal, today, recovered } = props.total;
+  const { total, lethal, recovered } = props.total;
 
   return (
     <MDBCard
@@ -15,7 +15,11 @@ function LeftSidebar(props) {
         <MDBListGroupItem className="font-weight-bold light-blue-text">
           Захворіло всього: {total}
         </MDBListGroupItem>
-        <MDBListGroupItem>За останню добу: {today}</MDBListGroupItem>
+        {
+          <MDBListGroupItem>
+            Лікуються: {total - lethal - recovered}
+          </MDBListGroupItem>
+        }
         <MDBListGroupItem>Летальні випадки: {lethal}</MDBListGroupItem>
         <MDBListGroupItem>Одужало: {recovered}</MDBListGroupItem>
         <MDBListGroupItem className="font-weight-bold dark-grey-text">
