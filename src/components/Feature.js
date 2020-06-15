@@ -66,11 +66,14 @@ export default function Feature({ feature, featureList }) {
           center={feature.properties.coordinates}
           fillColor={cartographyColor[3]}
           radius={
-            featureList[0].total > 400
-              ? featureList[0].total > 1000
-                ? featureList[0].total / 38
-                : featureList[0].total / 28
-              : featureList[0].total / 19
+            10 * Math.log(featureList[0].total / 90)
+            // featureList[0].total > 400
+            //   ? featureList[0].total > 1000
+            //     ? featureList[0].total / 38
+            //       ? featureList[0].total > 2000
+            //       : featureList[0].total / 48
+            //     : featureList[0].total / 28
+            //   : featureList[0].total / 19
           }
           fillOpacity={0.5}
           stroke={false}

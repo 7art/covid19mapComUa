@@ -14,7 +14,7 @@ import {
   MDBBox,
   MDBTooltip,
 } from "mdbreact";
-import { TestFetch } from "./TestFetch";
+import LastUpdatedInfo from "./LastUpdatedInfo";
 
 function EditFeatureInfo() {
   const [loading, setloading] = useState(true);
@@ -59,12 +59,14 @@ function EditFeatureInfo() {
           <MDBJumbotron>
             <MDBContainer>
               <MDBRow>
-                <MDBCol size="10">
+                <MDBCol size="8">
                   <h2 className="h1 display-3"> EDIT COVID-19 INFO</h2>
                 </MDBCol>
                 <MDBCol size="2">
+                  <LastUpdatedInfo />
+                </MDBCol>
+                <MDBCol size="2">
                   <MDBBox display="flex" justifyContent="end">
-                    <TestFetch />
                     <MDBTooltip material placement="right">
                       <div>
                         <MDBIcon

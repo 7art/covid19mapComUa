@@ -1,7 +1,7 @@
 import React from "react";
 import { MDBCard, MDBListGroup, MDBListGroupItem, MDBIcon } from "mdbreact";
-
-let dateToday = new Date().toLocaleDateString();
+import LastUpdatedInfo from "./LastUpdatedInfo";
+// let dateToday = new Date().toLocaleDateString();
 
 function LeftSidebar(props) {
   const { total, lethal, recovered } = props.total;
@@ -24,7 +24,7 @@ function LeftSidebar(props) {
         <MDBListGroupItem>Одужало: {recovered}</MDBListGroupItem>
         <MDBListGroupItem className="font-weight-bold dark-grey-text">
           <MDBIcon far icon="clock" className="pr-2" />
-          {dateToday}
+          <LastUpdatedInfo />
         </MDBListGroupItem>
       </MDBListGroup>
     </MDBCard>
