@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 # Firebase cache
-.firebase/
+/.firebase
 # Firebase config
 /.firebaserc
 # testing
