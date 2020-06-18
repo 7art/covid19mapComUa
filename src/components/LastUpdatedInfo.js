@@ -10,13 +10,14 @@ const LastUpdatedInfo = () => {
   }, []);
 
   const updateLastData = () => {
-    const update = { data: new Date() };
+    const date = new Date();
+    const update = { data: date };
+    setDate(date);
     firebase
       .firestore()
       .collection("lastUpdateData")
       .doc("data")
       .update(update);
-    // console.log("updateLastData", update);
   };
 
   const fetchDataInfo = () => {
@@ -59,14 +60,11 @@ const LastUpdatedInfo = () => {
         snapshot.forEach((doc) => {
           let time = doc.data().data;
           let date = time.toDate();
-
           setDate(date);
           const dif =
             (new Date().getTime() - new Date(date).getTime()) /
             (1000 * 60 * 60);
           dif > 2 && fetchDataInfo();
-
-          console.log(dif);
         });
       });
   };
